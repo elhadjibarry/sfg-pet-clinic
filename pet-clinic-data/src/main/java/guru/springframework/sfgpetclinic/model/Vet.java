@@ -2,9 +2,6 @@ package guru.springframework.sfgpetclinic.model;
 
 import java.util.Set;
 
-/**
- * @author Elhadji Barry (dur5268)
- */
 public class Vet extends Person {
 
     private Set<Speciality> specialities;
