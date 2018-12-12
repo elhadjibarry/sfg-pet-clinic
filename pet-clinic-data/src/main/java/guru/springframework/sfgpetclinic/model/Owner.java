@@ -16,7 +16,7 @@ import java.util.Set;
 public class Owner extends Person {
 
     @Column(name = "adress")
-    private String adress;
+    private String address;
 
     @Column(name = "city")
     private String city;
