@@ -1,6 +1,5 @@
 package guru.springframework.sfgpetclinic.model;
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,4 +18,7 @@ public class BaseEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    public boolean isNew() {
+        return this.id == null;
+    }
 }
